@@ -1,0 +1,29 @@
+{
+    "name": "senna/test",
+    "description": "Test for Senna",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lennard",
+            "email": "lennard@spring.nl"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "blade-ui-kit/blade-heroicons": "^1.2"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Senna\\Tests\\": "tests"
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.4"
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit --testdox",
+        "test-f": "vendor/bin/phpunit --filter"
+    }
+}
